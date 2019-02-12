@@ -1,0 +1,11 @@
+.navbar {
+  height: 70px;
+  box-shadow: 0 6px 6px -6px rgba(0, 0, 0, .4);
+  ;
+  &-item {
+    font-size: .9rem;
+    img {
+      max-height: 3rem;
+    }
+  }
+}

@@ -1,0 +1,253 @@
+@import '../../variables';
+.banner {
+  background: url('./hero-header-bg.png');
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .hero-body {
+    padding-bottom: 1rem !important;
+    padding-top: 7rem !important;
+  }
+}
+
+.has-text-shadow {
+  text-shadow: 2px 2px rgba(0, 0, 0, .2);
+}
+
+.section {
+  padding: 5rem 1.5rem;
+}
+
+.hr {
+  background-color: $primary;
+  border: none;
+  display: block;
+  height: 3px;
+  margin: 2rem 0;
+  width: 80%;
+}
+
+.timeline {
+  ol {
+    list-style: none;
+    counter-reset: count;
+  }
+  li {
+    position: relative;
+    padding: 10px;
+  }
+  li a {
+    color: gray;
+  }
+  li:after {
+    content: counter(count);
+    color: $primary;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #EEEDF0;
+    position: absolute;
+    left: -22px;
+    top: 20%;
+    text-align: center;
+    padding-top: 2px;
+    border: 2px solid $primary;
+  }
+  li:not(:last-child)::before {
+    content: '';
+    width: 2px;
+    height: 100%;
+    background: $primary;
+    position: absolute;
+    left: -8px;
+    top: 50%;
+  }
+  ol li {
+    counter-increment: count;
+  }
+  p {
+    margin-left: 2rem;
+    color: #282A2C;
+    &:nth-child(even) {
+      padding-bottom: 2rem;
+    }
+  }
+}
+
+.side-back {
+  background: url('./bg-trabajador.png');
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  position: relative;
+  .title {
+    position: absolute;
+    bottom: 2rem;
+  }
+}
+
+.require {
+  background: #EEEDF0;
+  .hr {
+    margin-left: -10%;
+    width: 120%;
+  }
+}
+
+.information {
+  background: url('./bg-legales.png');
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .hr {
+    margin-left: -10%;
+    width: 120%;
+  }
+}
+
+.footer {
+  p {
+    margin-bottom: .5rem;
+  }
+  a {
+    color: #666666;
+  }
+  .group {
+    .title {
+      margin-bottom: -2.2rem;
+      margin-top: 2rem;
+      span {
+        background-color: #EEEDF0;
+        padding: 2rem;
+      }
+    }
+    hr {
+      background: #666666;
+      height: 1px;
+    }
+  }
+}
+
+.form {
+  &.card {
+    background: rgba(255, 255, 255, .85);
+  }
+  .radios {
+    display: inline-block;
+    margin: 1.5rem;
+    .radio-container {
+      display: block;
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      font-size: .9rem;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      color: #666666;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    /* Hide the browser's default radio button */
+    .radio-container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+    /* Create a custom radio button */
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: #ffffff;
+      border: 2px solid $primary;
+      border-radius: 50%;
+    }
+    /* On mouse-over, add a grey background color */
+    .radio-container:hover input~.checkmark {
+      background-color: #ccc;
+    }
+    /* When the radio button is checked, add a blue background */
+    .radio-container input:checked~.checkmark {
+      background-color: $primary;
+    }
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    /* Show the indicator (dot/circle) when checked */
+    .radio-container input:checked~.checkmark:after {
+      display: block;
+    }
+    /* Style the indicator (dot/circle) */
+    .radio-container .checkmark:after {
+      top: 4px;
+      left: 4px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+    }
+  }
+}
+
+.input,
+.select select {
+  font-size: .85rem;
+  height: 2.25rem;
+  text-align: center;
+  option {
+    text-align: center;
+  }
+  border-color: $primary;
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+  border-color: #ccc;
+  right: .8rem;
+  z-index: 4;
+}
+
+.noclick {
+  cursor: inherit;
+  pointer-events: none;
+}
+
+.button.is-small {
+  border-radius: 3px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  font-weight: 500;
+}
+
+a.underlined {
+  text-decoration: underline #666666;
+}
+
+.steps .step-item .step-marker {
+  border-width: 1px;
+  background-color: $primary;
+}
+
+.steps .step-item {
+  z-index: 2;
+}
+
+.steps .step-item::before {
+  background: transparent;
+}
+
+.is-marginless-bottom {
+  margin-bottom: -2.5rem !important;
+}

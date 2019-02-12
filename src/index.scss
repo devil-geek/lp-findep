@@ -1,0 +1,11 @@
+@import './variables';
+@import '~bulma/bulma';
+@import '~bulma-steps/dist/css/bulma-steps.sass';
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
