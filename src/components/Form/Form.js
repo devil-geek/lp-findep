@@ -43,7 +43,7 @@ class Form extends Component {
                     <i className="fa fa-dollar-sign" />
                   </button>
                 </p>
-                <p className="control">
+                <p className="control is-expanded">
                   <input
                     className="input"
                     type="text"
@@ -82,19 +82,19 @@ class Form extends Component {
           </div>
 
           <p className="has-text-primary has-text-weight-semibold">
-            ¿Cuándo lo prodrías pagar?
+            ¿Cada cuándo lo prodrías pagar?
           </p>
           <br />
           <div className="columns is-centered">
             <div className="column is-narrow">
           <div className="buttons centered">
-          <button className="button is-primary is-small">
+                <button className="button is-primary is-outlined is-small">
             Semanal
           </button>
-            <button className="button is-primary is-small">
+                <button className="button is-primary is-outlined is-small">
               Quincenal
           </button>
-            <button className="button is-primary is-small">
+                <button className="button is-primary is-outlined is-small">
               Mensual
           </button>
             </div>
@@ -136,12 +136,13 @@ class Form extends Component {
     return (
       <div>
         <div className="columns is-centered is-marginless-bottom">
-          <div className="column is-10 is-marginless is-paddingless">
+          <div className="column is-11 is-marginless is-paddingless z-2">
             <Steps />
           </div>
         </div>
         
       <div className="form card">
+          <br />
           <br />
         <div className="card-content">{this.stepOne()}</div>
       </div>

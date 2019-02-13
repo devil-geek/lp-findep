@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import Information from "../Information/Information";
 
 const About = () => {
   return (
@@ -19,17 +20,13 @@ const About = () => {
                 nuestra diversidad, solidez y conductas apegadas a nuestros
                 Valores, buscando siempre dar apoyo a empleados y pequeños
                 comerciantes; filosofía que sin duda, nos ha identificado y nos
-                compromete a ser mejores cada día. Actualmente{" "}
-                <strong>
-                  ¡Tenemos más de 280,000 clientes satisfechos y vamos por más
-                  sueños que cumplir!
-                </strong>
-                .
+                compromete a ser mejores cada día.
               </p>
             </div>
           </div>
         </div>
       </section>
+      <Information />
       <section className="section">
         <div className="container">
           <div className="columns">
@@ -74,13 +71,13 @@ const About = () => {
         </div>
       </section>
       <div className="has-text-centered">
-        <h1 className="title has-text-primary is-size-4">
+        <h1 className="title has-text-primary is-size-2">
           Fácil, rápido y sin tanto rollo.
         </h1>
       </div>
       <br />
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

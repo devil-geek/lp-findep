@@ -1,6 +1,6 @@
 @import '../../variables';
 .banner {
-  background: url('./hero-header-bg.png');
+  background: url('./hero-header-bg.jpg');
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
@@ -8,6 +8,14 @@
   .hero-body {
     padding-bottom: 1rem !important;
     padding-top: 7rem !important;
+  }
+  &-footer {
+    padding: 1rem 0 .5rem;
+    p {
+      padding: 0 0 .5rem;
+    }
+    background: rgba(darken($primary, 15%),
+    .8);
   }
 }
 
@@ -77,7 +85,7 @@
 }
 
 .side-back {
-  background: url('./bg-trabajador.png');
+  background: url('./family.jpg');
   background-attachment: fixed;
   background-position: right;
   background-repeat: no-repeat;
@@ -97,16 +105,14 @@
   }
 }
 
+$opacity: .85;
+
 .information {
-  background: url('./bg-legales.png');
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  .hr {
-    margin-left: -10%;
-    width: 120%;
-  }
+  background: linear-gradient(141deg, rgba(#fb4e02, $opacity) 0%, rgba(#F3933D, $opacity) 71%, rgba(#f9bc51, $opacity) 100%), url('./hero-header-bg.jpg') !important;
+  background-attachment: fixed !important;
+  background-position: top !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 
 .footer {
@@ -133,6 +139,7 @@
 }
 
 .form {
+  z-index: 1;
   &.card {
     background: rgba(255, 255, 255, .85);
   }
@@ -240,14 +247,18 @@ a.underlined {
   background-color: $primary;
 }
 
-.steps .step-item {
-  z-index: 2;
+.steps .step-item:not(:first-child)::before {
+  height: 1px;
 }
 
 .steps .step-item::before {
-  background: transparent;
+  background: $primary;
 }
 
 .is-marginless-bottom {
-  margin-bottom: -2.5rem !important;
+  margin-bottom: -2.3rem !important;
+}
+
+.z-2 {
+  z-index: 2;
 }

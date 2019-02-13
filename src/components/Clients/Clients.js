@@ -1,5 +1,6 @@
 import React from 'react'
-import test1 from "./usr-testimonial-1.png";
+import test1 from "./testimonial1.png";
+import test2 from "./testimonial2.png";
 
 const Clients = () => {
   return (
@@ -19,7 +20,7 @@ const Clients = () => {
             <article className="media">
               <figure className="media-left">
                 <p className="image is-96x96">
-                  <img src={test1} alt="testimonial" />
+                  <img src={test2} alt="testimonial" />
                 </p>
               </figure>
               <div className="media-content">
