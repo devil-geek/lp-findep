@@ -1,8 +1,10 @@
 $primary: #53A13C;
 $info: #F3933D;
 $link: #DD662F;
-
-.centered{
+$tablet: 767px;
+.centered {
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
+@import "~bulma/sass/utilities/mixins";

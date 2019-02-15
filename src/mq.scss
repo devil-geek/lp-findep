@@ -1,0 +1,96 @@
+@import './variables';
+@include mobile {
+  body {
+    font-size: .9rem;
+  }
+  .section {
+    padding: 3rem 1.5rem;
+  }
+  .banner {
+    background-attachment: unset !important;
+    background-position: unset !important;
+    background-size: 160% !important;
+    & .hero-body {
+      padding-bottom: 1rem !important;
+      padding-top: 5rem !important;
+      padding-left: .8rem !important;
+      padding-right: .8rem !important;
+    }
+  }
+  .is-size-1 {
+    font-size: 1.6rem !important;
+  }
+  .is-size-2 {
+    font-size: 1.3rem !important;
+  }
+  .is-size-4 {
+    font-size: 1.15rem !important;
+  }
+  .title {
+    font-size: 1.6rem;
+    &:not(:last-child) {
+      margin-bottom: 0rem;
+    }
+  }
+  .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+  }
+  .card-content {
+    padding-top: 0 !important;
+  }
+  .steps .step-item .step-details {
+    margin-right: .1rem;
+    margin-left: .1rem;
+  }
+  .navbar {
+    height: 50px;
+    box-shadow: 0 6px 6px -6px rgba(0, 0, 0, .4);
+    &-item {
+      font-size: .9rem;
+      img {
+        max-height: 2rem;
+      }
+    }
+    &.is-white .navbar-burger {
+      color: $primary;
+    }
+    &-burger span {
+      height: 2px;
+    }
+  }
+  .banner-footer {
+    padding: 1rem .5rem .5rem;
+    background: rgba(64, 124, 46, 0.8);
+  }
+  .side-back {
+    display: none;
+  }
+  .image.is-128x128.centered {
+    height: 96px;
+    width: 96px;
+    padding: 5px;
+  }
+  .footer {
+    text-align: center;
+    .is-pulled-right {
+      float: none !important;
+    }
+  }
+  .buttons_ {
+    .button {
+      margin: 0 .2rem;
+    }
+  }
+}
+
+@include touch {
+  .banner-footer {
+    padding: 1rem 1rem .5rem;
+  }
+  .side-back {
+    background-attachment: unset !important;
+    background-position: center !important;
+    background-size: cover !important;
+  }
+}

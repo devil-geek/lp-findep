@@ -8,7 +8,7 @@ const Banner = () => {
           <div className="container">
             <div className='columns'>
               <div className='column is-7'>
-              <h1 className="title has-text-primary is-size-1 has-text-shadow">
+              <h1 className="title has-text-primary is-size-1 has-text-shadow is-spaced">
                 Préstamos personales
             </h1>
               <h2 className="subtitle has-text-dark has-text-weight-semibold has-text-shadow">
@@ -16,7 +16,7 @@ const Banner = () => {
             </h2>
               </div>
 
-              <div className='column is-4'>
+              <div className='column is-4 is-5-tablet is-4-desktop'>
               <Form/>
               </div>
             </div>
