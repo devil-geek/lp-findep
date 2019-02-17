@@ -4,24 +4,31 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Crear archivo .env con las siguientes variables
 
-REACT_APP_API= URL base de donde se consument los endpoints
+REACT_APP_API= URL base de donde se consumen los endpoints
 
 REACT_APP_ENV=FISA - Variable que indica que endpoints o validaciones se usarán (FISA o AEF)
 
 REACT_APP_FISA_CALCULATOR= endpoint calculadora sin amortización fisa
+
 REACT_APP_FISA_AMORT= endpoint calculadora con amortización fisa
+
 REACT_APP_FISA_COVER= cobertura de sucursales fisa
+
 REACT_APP_FISA_ENDPOINT= endpoint para mandar la solicitud (con authorización o sin autorizaciòn) fisa
 
 REACT_APP_AEF_CALCULATOR= endpoint calculadora sin amortización aef
+
 REACT_APP_AEF_AMORT= endpoint calculadora con amortización aef
+
 REACT_APP_AEF_COVER= cobertura de sucursales aef
+
 REACT_APP_AEF_ENDPOINT= endpoint para mandar la solicitud (con authorización o sin autorizaciòn) aef
 
 
 Para cambiar los colores en el archivo src->Styles->_variables
 
 comentar variables de FISA
+
 quitar comentario a las de AEF
 
 
