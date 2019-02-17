@@ -1,0 +1,48 @@
+{
+  "idMedio": "3",
+  "persona": 0,
+  "nombre": "",
+  "segundoNombre": "",
+  "apellidoPaterno": "",
+  "apellidoMaterno": "",
+  "fechaNacimiento": "",
+  "genero": "",
+  "correoElectronico": "",
+  "telefono": [
+    {
+      "numeroTelefono": "",
+      "tipoTelefono": ""
+    }
+  ],
+  "datosCredito": {
+    "condicionesAef": false,
+    "condicionesFisa": true,
+    "dedicacion": "",
+    "idEmpresa": "1",
+    "monto": "",
+    "periodo": "",
+    "plazo": ""
+  },
+  "domicilio": [
+    {
+      "calle": "",
+      "numeroExterior": "",
+      "numeroInterior": "",
+      "colonia": "",
+      "cp": "",
+      "municipio": "",
+      "estado": ""
+    }
+  ],
+  "datosBuro": {
+    "tarjetaCredito": "",
+    "numeroTarjetaCredito": "",
+    "hipotecarioCredito": "",
+    "automotrizCredito": "",
+    "autorizacion": "",
+    "consultaBuro": ""
+  },
+  "rfc": "",
+  "token": null,
+  "cobertura": 0
+}

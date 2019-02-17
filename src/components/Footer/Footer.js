@@ -82,11 +82,11 @@ const Footer = () => {
             <div className="is-pulled-right">
               <p className="has-text-weight-semibold">INFORMACIÓN</p>
               <p>
-                <a className="underlined"> Aviso de privacidad </a>
+                <a href="#" className="underlined"> Aviso de privacidad </a>
               </p>
               <p>
                 {" "}
-                <a className="underlined">Términos y condiciones</a>
+                <a href="#" className="underlined">Términos y condiciones</a>
               </p>
             </div>
           </div>

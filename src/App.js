@@ -4,20 +4,19 @@ import './index.scss';
 import Navbar from './components/Navbar/Navbar'
 import Home from './containers/Home/Home'
 import Forms from './containers/Forms/Forms';
-import './mq.scss'
+import Finish from './containers/Finish/Finish';
 
 class App extends Component {
   render() {
     return (
       <div>
         <Navbar />
-        <BrowserRouter>   
-             <Switch>
+        <BrowserRouter>
+          <Switch>
+            <Route exact path='/response' component={Finish} />
+            <Route exact path='/datos/:online?' component={Forms} />
             <Route exact path='/' component={Home} />
-            <Route exact path='/datos' component={Forms} />
-               
-               </Switch>  
-          
+          </Switch>
         </BrowserRouter>
       </div>
     );
